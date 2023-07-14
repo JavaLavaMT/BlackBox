@@ -1,6 +1,9 @@
-import signalWireClient from '../../lib/signalWire';
+// import signalWireClient from '../../lib/signalWire';
+// const signalWireClient = require('../../lib/signalWire');
+  import signalWireClient from '../../lib/signalWire.js'
 
-export async function main(args) {
+export default async function send(args) {
+
     console.log('Hello from SignalWire Functions!', args);
     // return [].forEach(async (phoneNumber) => {
     //     await signalWireClient.messages.create({
