@@ -11,6 +11,11 @@ fastify.get('/sms-2fa', async function handler (request, reply) {
   return { hello: 'world' }
 })
 
+fastify.get('/', async function handler (request, reply) {
+  // send({ body: 'Hello from SignalWire Functions!', to: '+14062834665' })
+  return { hello: 'world' }
+})
+
 // Run the server!
 try {
   console.log('Starting server...')
